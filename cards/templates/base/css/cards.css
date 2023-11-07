@@ -49,6 +49,12 @@
   height: 2.5in;
 }
 
+.card-size-25x17 {
+  /* Standard card in landscape */
+  width:  2.5in;
+  height: 1.7in;
+}
+
 .card-size-35x55 {
   /* Jumbo card */
   width:  3.5in;

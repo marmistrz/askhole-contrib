@@ -1145,4 +1145,4 @@ def make(data_paths: list,
 
     print()
 
-    open_path(output_path)
+    #open_path(output_path)

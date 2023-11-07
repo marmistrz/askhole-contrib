@@ -135,6 +135,8 @@ class CardSizes:
                 return CardSize(identifier, style='card-size-35x35', size_in_inches=(3.5, 3.5))
             elif identifier == 'standard-landscape':
                 return CardSize(identifier, style='card-size-35x25', size_in_inches=(3.5, 2.5))
+            elif identifier == 'small-landscape':
+                return CardSize(identifier, style='card-size-25x17', size_in_inches=(2.5, 1.7))
             elif identifier == 'jumbo':
                 return CardSize(identifier, style='card-size-35x55', size_in_inches=(3.5, 5.5))
             elif identifier == 'domino':
