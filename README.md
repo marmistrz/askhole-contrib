@@ -1,9 +1,14 @@
 # AskHole Contrib
 Extra sets of cards for AskHole. If you built your own custom deck, share it as well.
 
+## Dependencies
+```
+pacman -S python-docopt python-setuptools
+```
+
 ## Building
 ```
-python run.py make decks/askhole-expansion/cards.csv --card-size=small-landscape
+python run.py make decks/<deck-name>/cards.csv --card-size=small-landscape
 ```
 
 ## Decks
