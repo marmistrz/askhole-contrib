@@ -1,0 +1,58 @@
+<style type="text/css">
+  .party_card {
+    padding: .7em .7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .party_cardtext {
+    display: block;
+    text-align: left;
+    font-size: 20pt;
+    word-break: break-word;
+    flex-grow: 1;
+  }
+
+  .party_cardnumber {
+    color: #bbb;
+    font-size: .5em;
+  }
+
+  .deck_name {
+    color: #bbb;
+    font-size: .5em;
+  }
+
+  .footer {
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+</style>
+
+<div class="party_card">
+  <div class="party_cardtext">
+    <div class="shrink">{{ text }}</div>
+  </div>
+  <div class="footer">
+    <span class="deck_name">AskHole</span>
+    <span class="party_cardnumber">#{{id}}</span>
+  </div>
+</div>
+
+<script type="text/javascript">
+  for (const element of document.getElementsByClassName("shrink")) {
+    var size = 24;
+    // FIXME do not hardcode
+    while (element.offsetHeight > 121 ) {
+      element.style.fontSize = size + "pt"
+      size -= 1
+    }
+    console.log(element.textContent)
+  }
+</script>
